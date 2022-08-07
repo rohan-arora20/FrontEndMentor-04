@@ -1,0 +1,39 @@
+.heading__primary {
+  font-family: $font-fraunces, sans-serif;
+  font-weight: 800;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 8px;
+  display: block;
+}
+
+.heading__secondary {
+  font-weight: 900;
+  font-family: $font-fraunces, sans-serif;
+  font-size: 3.8rem;
+  line-height: 1.2;
+}
+
+.heading__tertiary {
+  font-weight: 900;
+  font-family: $font-fraunces, sans-serif;
+  font-size: 3.2rem;
+
+  &--green {
+    color: $color-dark-cyan-desaturated;
+  }
+  &--blue {
+    color: $color-dark-blue;
+  }
+}
+
+.heading__quaternary {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $font-fraunces, sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: $color-dark-blue-grayish-3;
+  letter-spacing: 5px;
+}

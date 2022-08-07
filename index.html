@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <header class="header">
+        <img
+          src="./images/logo.svg"
+          alt="SunnySide Logo"
+          class="header__logo"
+        />
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link btn__cta">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="btn-navigation">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Btn Navigation"
+            class="btn-navigation__img"
+          />
+        </button>
+      </header>
+      <div class="hero__description">
+        <h1 class="heading__primary">We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="Arrow Down" />
+      </div>
+    </div>
+    <main>
+      <div class="features">
+        <div class="feature-text-box feature--transform">
+          <h2 class="heading__secondary">Transform your brand</h2>
+          <p class="feature__description">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a href="#" class="btn btn--yellow">Learn more</a>
+        </div>
+        <div class="feature-img-box feature-img-box--1"></div>
+        <div class="feature-img-box feature-img-box--2"></div>
+        <div class="feature-text-box feature--stand-out">
+          <h2 class="heading__secondary">Stand out to the right audience</h2>
+          <p class="feature__description">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" class="btn btn--red">Learn more</a>
+        </div>
+        <div class="feature-text-box feature--graphic-design">
+          <h3 class="heading__tertiary heading__tertiary--green">
+            Graphic design
+          </h3>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+        <div class="feature-text-box feature--photography">
+          <h3 class="heading__tertiary heading__tertiary--blue">Photography</h3>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+      <div class="testimonials-container">
+        <h3 class="heading__quaternary mg-bottom-lg">Client Testimonials</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Image Emily"
+              class="testimonial__img"
+            />
+            <blockquote class="testimonial__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </blockquote>
+            <div class="testimonial__author">
+              <p class="author__name">Emily R.</p>
+              <span class="author__desigination">Marketing Director</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="Image Thomas"
+              class="testimonial__img"
+            />
+            <blockquote class="testimonial__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </blockquote>
+            <div class="testimonial__author">
+              <p class="author__name">Thomas S.</p>
+              <span class="author__desigination">Chief Operating Officer</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="Image Jennie"
+              class="testimonial__img"
+            />
+            <blockquote class="testimonial__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </blockquote>
+            <div class="testimonial__author">
+              <p class="author__name">Jennie F.</p>
+              <span class="author__desigination">Business Owner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img
+            class="gallery__img gallery__img--desktop"
+            src="./images/desktop/image-gallery-milkbottles.jpg"
+            alt="Gallery 1"
+          />
+          <img
+            class="gallery__img gallery__img--mobile"
+            src="./images/mobile/image-gallery-milkbottles.jpg"
+            alt="Gallery 1"
+          />
+        </figure>
+        <figure>
+          <img
+            class="gallery__img gallery__img--desktop"
+            src="./images/desktop/image-gallery-orange.jpg"
+            alt="Gallery 2"
+          />
+          <img
+            class="gallery__img gallery__img--mobile"
+            src="./images/mobile/image-gallery-orange.jpg"
+            alt="Gallery 2"
+          />
+        </figure>
+        <figure>
+          <img
+            class="gallery__img gallery__img--desktop"
+            src="./images/desktop/image-gallery-cone.jpg"
+            alt="Gallery 3"
+          />
+          <img
+            class="gallery__img gallery__img--mobile"
+            src="./images/mobile/image-gallery-cone.jpg"
+            alt="Gallery 3"
+          />
+        </figure>
+        <figure>
+          <img
+            class="gallery__img gallery__img--desktop"
+            src="./images/desktop/image-gallery-sugarcubes.jpg"
+            alt=""
+          />
+          <img
+            class="gallery__img gallery__img--mobile"
+            src="./images/mobile/image-gallery-sugar-cubes.jpg"
+            alt=""
+          />
+        </figure>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo mg-bottom-sm"></div>
+      <nav class="footer__nav mg-bottom-lg">
+        <ul class="footer__items">
+          <li class="footer__item">
+            <a href="#" class="footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Services</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="social-icons">
+        <ul class="social-icons__items">
+          <li class="social-icons__item social-icons__item--facebook"></li>
+          <li class="social-icons__item social-icons__item--instagram"></li>
+          <li class="social-icons__item social-icons__item--twitter"></li>
+          <li class="social-icons__item social-icons__item--pinterest"></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

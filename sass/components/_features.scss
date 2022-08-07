@@ -1,0 +1,199 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 40vw);
+
+  @media (max-width: 800px) {
+    grid-template-rows: repeat(3, 45vw);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 70vh);
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 50vh);
+  }
+}
+
+.feature {
+  &-text-box {
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media (max-width: 700px) {
+      align-items: center;
+    }
+  }
+
+  &-text-box h2 {
+    width: 85%;
+    display: inline-block;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
+    @media (max-width: 700px) {
+      text-align: center;
+    }
+  }
+
+  &--transform {
+    padding: 0 12rem 0 15rem;
+
+    @media (max-width: 1200px) {
+      padding: 0 6rem 0 10rem;
+    }
+    @media (max-width: 1000px) {
+      padding: 0 6rem 0 4rem;
+    }
+
+    @media (max-width: 700px) {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 1;
+    }
+  }
+
+  &--stand-out {
+    padding: 0 12rem 0 15rem;
+
+    @media (max-width: 1200px) {
+      padding: 0 6rem 0 10rem;
+    }
+    @media (max-width: 1200px) {
+      padding: 0 6rem 0 4rem;
+    }
+  }
+
+  &__description {
+    color: $color-dark-blue-grayish-3;
+    font-family: $font-barlow, sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    width: 88%;
+    font-weight: 600;
+
+    @media (max-width: 1100px) {
+      width: 95%;
+    }
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+    @media (max-width: 700px) {
+      text-align: center;
+    }
+  }
+
+  &-img-box {
+    background-position: center;
+    background-size: cover;
+
+    &--1 {
+      background-image: url(./../../images/desktop/image-transform.jpg);
+
+      @media (max-width: 500px) {
+        background-image: url(./../../images/mobile/image-transform.jpg);
+      }
+    }
+
+    &--2 {
+      background-image: url(./../../images/desktop/image-stand-out.jpg);
+      @media (max-width: 500px) {
+        background-image: url(./../../images/mobile/image-stand-out.jpg);
+      }
+    }
+  }
+
+  &--graphic-design {
+    background-image: url(../../images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: end;
+    padding: 0 10rem 5rem 10rem;
+    gap: 3rem;
+
+    @media (max-width: 1200px) {
+      padding: 0 6rem 5rem 6rem;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 0 3rem 2rem 3rem;
+    }
+    @media (max-width: 900px) {
+      gap: 2rem;
+    }
+    @media (max-width: 800px) {
+      gap: 1rem;
+    }
+    @media (max-width: 500px) {
+      background-image: url(./../../images/mobile/image-graphic-design.jpg);
+    }
+
+    p {
+      text-align: center;
+      width: 70%;
+      font-family: $font-barlow, sans-serif;
+      font-weight: 600;
+      line-height: 1.6;
+      color: $color-dark-cyan-desaturated;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &--photography {
+    background-image: url(../../images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: end;
+    padding: 0 10rem 5rem 10rem;
+    gap: 3rem;
+
+    @media (max-width: 1200px) {
+      padding: 0 10rem 5rem 10rem;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 0 8rem 2rem 8rem;
+    }
+
+    @media (max-width: 900px) {
+      gap: 2rem;
+      padding: 0 6rem 2rem 6rem;
+    }
+
+    @media (max-width: 800px) {
+      gap: 1rem;
+      padding: 0 4rem 2rem 4rem;
+    }
+
+    @media (max-width: 500px) {
+      background-image: url(./../../images/mobile/image-photography.jpg);
+    }
+
+    p {
+      text-align: center;
+      width: 70%;
+      font-family: $font-barlow, sans-serif;
+      font-weight: 600;
+      line-height: 1.6;
+      color: $color-dark-blue;
+
+      @media (max-width: 1200px) {
+        width: 90%;
+      }
+    }
+  }
+}

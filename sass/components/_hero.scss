@@ -1,0 +1,39 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./../../images/desktop/image-header.jpg);
+  background-position: bottom;
+  background-size: cover;
+  // background-size: contain;
+  background-repeat: no-repeat;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+
+  @media (max-width: 1400px) {
+    gap: 8rem;
+  }
+
+  @media (max-width: 1100px) {
+    gap: 12rem;
+  }
+
+  @media (max-width: 500px) {
+    background-image: url(./../../images/mobile/image-header.jpg);
+  }
+
+  &__description {
+    // position: absolute;
+    // top: 36%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 6rem;
+  }
+}
